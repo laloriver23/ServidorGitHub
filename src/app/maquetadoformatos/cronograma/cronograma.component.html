@@ -1,0 +1,161 @@
+
+  <section class="d-flex justify-content-center" >
+    <div class="card col-sm-7 p-5 shadow p-3 mb-5 bg-body rounded" >
+      <div class="mb-3" >
+        <h5>CRONOGRAMA</h5>
+      </div>
+      <div class="mb-2">
+        <form action = "">
+          <form>
+            <div class="claseFormulario">
+              <label for="transactionAmountno">No</label>
+              <input id="transactionAmountno" type="number">
+            </div>
+            <div class="claseFormulario">
+              <label for="transactionDescription">Actividad</label>
+              <input id="transactionDescription">
+            </div>
+            <div class="claseFormulario">
+              <label for="transactionAmountunidad">Unidad</label>
+              <input id="transactionAmountunidad" type="number">
+            </div>
+            <div class="claseFormulario">
+              <label for="transactionAmountcantidad">Cantidad</label>
+              <input id="transactionAmountcantidad" type="number">
+            </div>
+            <div class="claseFormulario">
+              <label for="transactionAmountmeses">Meses</label>
+              <input id="transactionAmountmeses" type="number">
+            </div>
+            <div class="claseFormulario">
+              <button>Añadir</button>
+            </div>
+          </form>
+
+
+
+          <div class="tableFormat">
+            <table>
+              <tr>
+                <th>
+                  No.
+                </th>
+                <th>
+                  Actividades
+                </th>
+                <th>
+                  Unidad
+                </th>
+                <th>
+                  Cantidad
+                </th>
+                <th>
+                  Meses
+                </th>
+              </tr>
+              <tr>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+              </tr>
+              <tr>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+                <td>XXXXXXXX</td>
+              </tr>
+            </table>
+          </div>
+
+
+          <script>
+            const form = document.getElementByID("transactionForm");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+              }
+            )
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+          <style>
+            form {
+              text-align: center;
+            }
+
+            .claseFormulario {
+              padding-bottom: 10px;
+            }
+
+            td,
+            th {
+              text-align: center;
+              padding: 10px;
+              border: solid black 1px;
+            }
+
+            .tableFormat table {
+              margin: 10px auto;
+            }
+
+            h1 {
+              text-align: center;
+            }
+
+            form {
+              text-align: center;
+            }
+
+            .clase.Formulario {
+              background-color: wheat;
+              padding-bottom: 20px;
+            }
+
+            #botonDeEnvio {
+              font-size: 23px;
+            }
+
+          </style>
+
+
+
+
+          <div class="mb-2" align="right">
+
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-secondary" [routerLink]="['/honorarios']">Regresar</button>
+              </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-outline-secondary" [routerLink]="['/inicio']">Inicio</button>
+              </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-outline-secondary" [routerLink]="['/servicios']">Siguiente</button>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+

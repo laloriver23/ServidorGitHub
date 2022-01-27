@@ -1,0 +1,177 @@
+<section class="d-flex justify-content-center" >
+  <div class="card col-sm-7 p-5 shadow p-3 mb-5 bg-body rounded" >
+    <div class="mb-3">
+      <h5>DATOS GENERALES</h5>
+    </div>
+
+    <form  [formGroup]="FormDatosGenerales" class="row g-3" >
+      <div class="col-md-4">
+        <label for="inputZip" class="form-label">Clave del proyecto</label>
+        <input type="text" class="form-control" id="inputZip1" placeholder="Agregue una clave" formControlName="clave"
+               [ngClass]="{}">
+        <div *ngIf="clave.errors &&  clave.touched" class="alert alert-danger" role="alert">
+          <div class="container-error" *ngIf="clave.hasError('required')">
+          ** Campo requerido
+          </div>
+          <div class="container-error" *ngIf="clave.hasError('minlength')">
+            Minimo dos caracteres
+          </div>
+          <div class="container-error" *ngIf="clave.hasError('maxlength')">
+            Minimo cinco caracteres
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="inputZip" class="form-label">Periodo Escolar</label>
+        <select id="inputState4" class="form-select" formControlName="area"><br>
+          <option selected >Seleccione una</option>
+          <option *ngFor="let i of FormPeriodo">{{i}}</option>
+        </select>
+      </div>
+
+      <div class="col-md-5">
+        <label for="inputZip" class="form-label">Divisiones</label>
+        <select id="inputState5" class="form-select" formControlName="area"><br>
+          <option selected >Seleccione una</option>
+          <option *ngFor="let i of FormDivisiones">{{i}}</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Nombre del proyecto</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Agregue el nombre del proyecto" formControlName="nombreproyecto">
+        <div *ngIf="nombreproyecto.errors &&  nombreproyecto.touched" class="alert alert-danger" role="alert">
+          <div class="container-error" *ngIf="nombreproyecto.hasError('required')">
+            ** Campo requerido
+          </div>
+          <div class="container-error" *ngIf="nombreproyecto.hasError('minlength')">
+            Minimo dos caracteres
+          </div>
+          <div class="container-error" *ngIf="nombreproyecto.hasError('maxlength')">
+            Minimo cinco caracteres
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputPrograma" class="form-label" >Programa al que pertenece el proyecto</label>
+        <select id="inputPrograma" class="form-select" formControlName="programa">
+          <option selected>Seleccione una</option>
+          <option>Investigación básica</option>
+          <option>Investigación tecnológica</option>
+          <option>Desarrollo experimental</option>
+          <option>Investigación aplicada</option>
+          <option>Desarrollo tecnológico</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputState" class="form-label" >Área de investigación seleccionada</label>
+        <select id="inputState" class="form-select" formControlName="area"><br>
+          <option selected >Seleccione una</option>
+          <option>Investigación básica</option>
+          <option>Investigación tecnológica</option>
+          <option>Desarrollo experimental</option>
+          <option>Investigación aplicada</option>
+          <option>Desarrollo tecnológico</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputlinea" class="form-label">Línea de investigación seleccionada</label>
+        <select id="inputlinea" class="form-select" formControlName="lineainvestigacion"><br>
+          <option selected>Seleccione una</option>
+          <option>Investigación básica</option>
+          <option>Investigación tecnológica</option>
+          <option>Desarrollo experimental</option>
+          <option>Investigación aplicada</option>
+          <option>Desarrollo tecnológico</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputnivel" class="form-label">Nivel académico en que se realizará el proyecto</label>
+        <select id="inputnivel" class="form-select" formControlName="nivelacademico"><br>
+          <option selected>Seleccione una</option>
+          <option>Interinstitucional</option>
+          <option>Institucional</option>
+          <option>Divisional</option>
+        </select>
+      </div>
+
+      <div class="mb-2">
+        <label>Explique de manera breve la forma en que los resultados del proyecto planteado contribuirán a mejorar los servicios que ofrece la división.</label><br><br>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px" formControlName="txt" ></textarea>
+          <div *ngIf="txt.errors &&  txt.touched" class="alert alert-danger" role="alert">
+            <div class="container-error" *ngIf="txt.hasError('required')">
+              ** Campo requerido
+            </div>
+            <div class="container-error" *ngIf="txt.hasError('minlength')">
+              Minimo dos caracteres
+            </div>
+            <div class="container-error" *ngIf="txt.hasError('maxlength')">
+              Minimo cinco caracteres
+            </div>
+          </div>
+          <label for="floatingTextarea2"></label>
+        </div>
+      </div>
+
+      <div class="mb-0">
+        <label>Datos del coordinador del proyecto</label>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="Agregue el nombre del coordinador" formControlName="nombrecoordinador">
+        <div *ngIf="nombrecoordinador.errors &&  nombrecoordinador.touched" class="alert alert-danger" role="alert">
+          <div class="container-error" *ngIf="nombrecoordinador.hasError('required')">
+            ** Campo requerido
+          </div>
+          <div class="container-error" *ngIf="nombrecoordinador.hasError('minlength')">
+            Minimo dos caracteres
+          </div>
+          <div class="container-error" *ngIf="nombrecoordinador.hasError('maxlength')">
+            Minimo cinco caracteres
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="inputState" class="form-label">Cargo</label>
+        <select id="inputState2" class="form-select" formControlName="cargo">
+          <option selected>Seleccione una</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="inputZip" class="form-label">Teléfono</label>
+        <input type="text" class="form-control" id="inputZip" placeholder="Agregue un numero telefononico" formControlName="telefono">
+        <div *ngIf="telefono.errors &&  telefono.touched" class="alert alert-danger" role="alert">
+          <div class="container-error" *ngIf="telefono.hasError('required')">
+            ** Campo requerido
+          </div>
+          <div class="container-error" *ngIf="telefono.hasError('minlength')">
+            Minimo dos caracteres
+          </div>
+          <div class="container-error" *ngIf="telefono.hasError('maxlength')">
+            Minimo cinco caracteres
+          </div>
+        </div>
+      </div>
+
+    </form><br>
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group me-2" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-outline-secondary" [routerLink]="['/inicio']">Inicio</button>
+      </div>
+      <div class="btn-group me-2" role="group" aria-label="Second group">
+        <button (click)="imprime()" class="btn btn-outline-secondary" [routerLink]="['justificacion']" [disabled]="!FormDatosGenerales.valid">Siguiente</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+

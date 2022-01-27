@@ -1,0 +1,86 @@
+<html>
+<head>
+  <! - JQUERY ->
+  <script  src = " https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+
+  <! - FRAMEWORK BOOTSTRAP para el estilo de la pagina ->
+  <link  rel = " stylesheet " href = " https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css " >
+  <script  src = " https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+
+  <! - Los iconos tipo Solid de Fontawesome ->
+  <link  rel = " stylesheet " href = " https://use.fontawesome.com/releases/v5.0.8/css/solid.css ">
+  <script  src = " https://use.fontawesome.com/releases/v5.0.7/js/all.js "></script>
+
+</head>
+<body>
+<div class="modal-dialog text-center">
+  <div class="col-sm-12 main-section" >
+    <div class="modal-content">
+      <div class="col-12 user-img">
+        <img src="./assets/escritura.png" alt="" width="180" height="180">
+      </div>
+
+      <form class="col-12">
+
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputid" class="form-label">ID Empleado</label>
+            <input type="id" class="form-control" id="inputid" placeholder="Ingrese su ID">
+          </div>
+          <div class="col-md-6">
+            <label for="inputnombre" class="form-label">Nombre</label>
+            <input type="nombre" class="form-control" id="inputnombre" placeholder="Ingrese su Nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="inputapellidop" class="form-label">Apellido Paterno</label>
+            <input type="apellidop" class="form-control" id="inputapellidop" placeholder="Ingrese su Apellido Paterno">
+          </div>
+          <div class="col-md-6">
+            <label for="inputellidom" class="form-label">Apellido Materno</label>
+            <input type="apellidom" class="form-control" id="inputellidom" placeholder="Ingrese su Apellido Materno">
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Cargo</label>
+            <select id="inputState" class="form-select">
+              <option selected>Seleccione uno</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputnumcel" class="form-label">Numero de Celular</label>
+            <input type="numcel" class="form-control" id="inputnumcel" placeholder="Ingrese su Numero de Celular">
+          </div>
+          <div class="col-12">
+            <label for="inputcorreo" class="form-label">Correo Electronico</label>
+            <input type="correo" class="form-control" id="inputcorreo" placeholder="Ingrese un correo electronico">
+          </div>
+          <div class="col-md-6">
+            <label for="inputcontra1" class="form-label">Ingrese una Contraseña</label>
+            <input type="contra1" class="form-control" id="inputcontra1" placeholder="Ingrese su contraseña">
+          </div>
+          <div class="col-md-6">
+            <label for="inputcontra2" class="form-label">Confirme su contraseña</label>
+            <input type="contra2" class="form-control" id="inputcontra2" placeholder="Confirme su contraseña">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                He leido y acepto los terminos y condiciones de uso
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button><br><br>
+          </div>
+        </form>
+      </form>
+      <div class="col-12 forgot">
+        <a href="#">Iniciar sesión</a><br><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

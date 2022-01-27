@@ -1,0 +1,58 @@
+<ul class="nav justify-content-center bg-white py-0 text-black">
+  <li class="nav-item">
+    <img src="/assets/logotese.gif" alt="" width="60" height="55">
+    <img src="/assets/logogobiernoedo.png" alt="" width="130" height="60">
+    <img src="/assets/logogobiernocompromiso.jpg" alt="" width="170" height="50">
+  </li>
+</ul>
+
+<ul class="nav justify-content-center bg-white py-0 text-black">
+  <li class="nav-item">
+    <h4 class="nav justify-content-center bg-white py-0 text-black">SPIDET</h4>
+    <h5>Sistema para la Elaboración de Proyectos de Investigación y/o Desarrollo Tecnológico</h5>
+  </li>
+</ul>
+
+
+<nav class="navbar navbar-expand-lg navbar navbar-expand-lg navbar-light bg-white bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SPIDET</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['inicio']">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active" [routerLink]="['forms']" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Formatos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" [routerLink]="['datosgenerales']">FO-TESE-DA-67- PIDT01</a></li>
+            <li><a class="dropdown-item" [routerLink]="['datosgenerales']">FO-TESE-DA-68- PIDT02</a></li>
+            <li><a class="dropdown-item" [routerLink]="['formato69']">FO-TESE-DA-69- PIDT03</a></li>
+            <li><a class="dropdown-item" [routerLink]="['formato70']">FO-TESE-DA-70- PIDT04</a></li>
+            <li><a class="dropdown-item" [routerLink]="['formato71']">FO-TESE-DA-71- PIDT05</a></li>
+            <li><a class="dropdown-item" [routerLink]="['formato72']">FO-TESE-DA-72- PIDT05</a></li>
+            <li><a class="dropdown-item" [routerLink]="['formato73']">FO-TESE-DA-73- PIDT05</a></li>
+
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['ayuda']">Ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['contacto']">Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

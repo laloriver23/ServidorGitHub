@@ -1,0 +1,154 @@
+<section class="d-flex justify-content-center" >
+  <div class="card col-sm-7 p-5 shadow p-3 mb-5 bg-body rounded" >
+    <div class="mb-3" >
+      <h5>RECURSOS MATERIALES SOLICITADOS PARA EL PROYECTO</h5>
+      <label>Recursos materiales que se requieren para la operación del proyecto.</label><br>
+    </div>
+    <div class="mb-2">
+      <form action = "">
+        <form>
+          <div class="claseFormulario">
+            Tipo de transaccion
+            <input id="ingreso" type="radio">
+            <label for="ingreso">Ingreso</label>
+            <input id="Egreso" type="radio">
+            <label for="Egreso">Egreso</label>
+          </div>
+          <div class="claseFormulario">
+            <label for="transactionDescription">Descripcion</label>
+            <input id="transactionDescription">
+          </div>
+          <div class="claseFormulario">
+            <label for="transactionAmount">Monto</label>
+            <input id="transactionAmount" type="number">
+          </div>
+          <div class="claseFormulario">
+            <label for="transactionCategory">Categoria</label>
+            <input id="transactionCategory">
+          </div>
+          <div class="claseFormulario">
+            <button>Añadir</button>
+          </div>
+        </form>
+
+
+
+
+
+        <div class="tableFormat">
+          <table>
+            <tr>
+              <th>
+                Tipo
+              </th>
+              <th>
+                Descripcion
+              </th>
+              <th>
+                Monto
+              </th>
+              <th>
+                Categoria
+              </th>
+            </tr>
+            <tr>
+              <td>Ingreso</td>
+              <td>Sueldo</td>
+              <td>1000</td>
+              <td>Trabajo</td>
+            </tr>
+            <tr>
+              <td>XXXXXXXX</td>
+              <td>XXXXXXXX</td>
+              <td>XXXXXXXX</td>
+              <td>XXXXXXXX</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <script>
+          const form = document.getElementByID("transactionForm");
+
+          form.addEventListener("submit", function(event) {
+          event.preventDefault();
+            }
+          )
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  form {
+    text-align: center;
+  }
+
+  .claseFormulario {
+    padding-bottom: 10px;
+  }
+
+  td,
+  th {
+    text-align: center;
+    padding: 10px;
+    border: solid black 1px;
+  }
+
+    .tableFormat table {
+      margin: 10px auto;
+    }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  .clase.Formulario {
+    background-color: wheat;
+    padding-bottom: 20px;
+  }
+
+  #botonDeEnvio {
+    font-size: 23px;
+  }
+
+</style>
+
+
+
+
+        <div class="mb-2" align="right">
+
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-secondary" [routerLink]="['/honorarios']">Regresar</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+              <button type="button" class="btn btn-outline-secondary" [routerLink]="['/inicio']">Inicio</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+              <button type="button" class="btn btn-outline-secondary" [routerLink]="['/servicios']">Siguiente</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+

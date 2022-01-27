@@ -1,0 +1,157 @@
+<section class="d-flex justify-content-center" >
+  <div class="card col-sm-7 p-5 shadow p-3 mb-5 bg-body rounded" >
+    <div class="mb-3">
+      <h5>Hoja de Calificaciones para Programas de Investigación <p>
+        <b>FO-TESE-DA-70 PIDT 04</b></p></h5>
+    </div>
+
+    <div class="col-md-6">
+      <label for="inputPrograma" class="form-label">Seleccione nombre del programa</label>
+      <select id="inputPrograma" class="form-select">
+        <option selected>Seleccione una</option>
+        <option>Investigación básica</option>
+        <option>Investigación tecnológica</option>
+        <option>Desarrollo experimental</option>
+        <option>Investigación aplicada</option>
+        <option>Desarrollo tecnológico</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label for="inputPrograma" class="form-label">Seleccione nombre del coordinador del programa</label>
+      <select id="inputPrograma" class="form-select">
+        <option selected>Seleccione una</option>
+        <option>Dra. Griselda Cortéz Barrera</option>
+        <option>Dr. Edgar Corona Organiche</option>
+        <option>M.en C. Mercedes Flores Flores</option>
+        <option>Dr. Abraham Ramírez Ortiz</option>
+        <option>Ing. Ernesto Diaz Hernández</option>
+      </select>
+    </div>
+    <p> </p>
+
+    <div class="col-md-6">
+      <label for="inputPrograma" class="form-label">Seleccione Calificación del proyecto 1</label>
+      <select id="inputPrograma" class="form-select">
+        <option selected>Seleccione una</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label for="inputPrograma" class="form-label">Seleccione Calificación del proyecto 2</label>
+      <select id="inputPrograma" class="form-select">
+        <option selected>Seleccione una</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label for="inputPrograma" class="form-label">Seleccione Calificación del proyecto 3</label>
+      <select id="inputPrograma" class="form-select">
+        <option selected>Seleccione una</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+
+    <p>
+
+    </p>
+    <form  [formGroup]="formdatos" class="row g-3" >
+      <div class="col-md-3">
+        <label for="inputZip" class="form-label"><b>Total</b></label>
+        <input type="text" class="form-control" id="inputZip" formControlName="clave" placeholder="Sumatoria de las calificaciones">
+        <div *ngIf="formdatos.controls['clave'].invalid && formdatos.controls['clave'].dirty" class="alert alert-danger" role="alert">
+          <span *ngIf="formdatos.controls['clave']">Clave Requerida</span>
+        </div>
+      </div>
+      <p>
+      </p>
+
+      <label for="inputZip" class="form-label">Calificación global del programa</label>
+      <input type="text" class="form-control" id="inputZip" formControlName="clave" placeholder="Sumatoria de las calificaciones">
+
+      <div class="col-md-6">
+        <label for="inputPrograma" class="form-label">Número de proyectos</label>
+        <select id="inputPrograma" class="form-select">
+          <option selected>Seleccione una</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+      </div>
+
+      <label for="inputZip" class="form-label"><b>Promedio Total</b></label>
+      <input type="text" class="form-control" id="inputZip" formControlName="clave" placeholder=" promedio  de  calificación  del  programa  dividiendo  la suma  de  calificaciones  de  los  proyectos  entre  el  número  de proyectos">
+
+
+
+
+
+      <div class="mb-2">
+        <label>Argumente de manera breve las razones de aceptación o rechazo del programa.</label><br><br>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px" formControlName="texto"></textarea>
+          <label for="floatingTextarea2"></label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputPrograma" class="form-label">Seleccione nombre del coordinador del programa</label>
+        <select id="inputPrograma" class="form-select">
+          <option selected>Seleccione una</option>
+          <option>Dra. Griselda Cortéz Barrera</option>
+          <option>Dr. Edgar Corona Organiche</option>
+          <option>M.en C. Mercedes Flores Flores</option>
+          <option>Dr. Abraham Ramírez Ortiz</option>
+          <option>Ing. Ernesto Diaz Hernández</option>
+        </select>
+      </div>
+
+
+
+    </form><br>
+
+  </div>
+</section>
+
+
+
